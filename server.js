@@ -3,6 +3,7 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 app.use(express.json());
+const fetch = require("node-fetch");
 require('dotenv').config();
 const PORT = 8000;
 const OPENAI_API_KEY=process.env.OPENAI_API_KEY;
